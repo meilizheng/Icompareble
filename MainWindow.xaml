@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:Icompareble"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <Canvas Background="#FF398E94">
+        <ListBox x:Name="lbDisplay" HorizontalAlignment="Left" Height="250" VerticalAlignment="Top" Width="515" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="250" Canvas.Top="49" Background="#FF61A795"/>
+        <Button x:Name="btnPrice" Content="sort by price" Height="40" Canvas.Left="30" Canvas.Top="64" Width="160" Click="btnPrice_Click" Background="#FFA8B3E0"/>
+        <Button x:Name="btncapacity" Content="sort by capacity" Height="40" Canvas.Left="30" Canvas.Top="144" Width="160" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btncapacity_Click" Background="#FFA9B5E6"/>
+        <Button x:Name="btnShape" Content="sort by shape" Height="42" Canvas.Left="30" Canvas.Top="217" Width="160" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnShape_Click" Background="#FFA7B4E6"/>
+
+    </Canvas>
 </Window>
